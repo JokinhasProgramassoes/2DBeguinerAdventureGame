@@ -1,9 +1,36 @@
 fileFormatVersion: 2
-guid: d1de30ef06047de4ca2712c354102406
+guid: 902642908e866f641975dbbf0a89bfb5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: FloorWaterRoundCorners0
+  - first:
+      213: 21300002
+    second: FloorWaterRoundCorners1
+  - first:
+      213: 21300004
+    second: FloorWaterRoundCorners2
+  - first:
+      213: 21300006
+    second: FloorWaterRoundCorners3
+  - first:
+      213: 21300008
+    second: FloorWaterRoundCorners4
+  - first:
+      213: 21300010
+    second: FloorWaterRoundCorners5
+  - first:
+      213: 21300012
+    second: FloorWaterRoundCorners6
+  - first:
+      213: 21300014
+    second: FloorWaterRoundCorners7
+  - first:
+      213: 21300016
+    second: FloorWaterRoundCorners8
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -44,13 +71,13 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
-  spriteMeshType: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -63,14 +90,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 256
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -82,7 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -95,7 +122,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -109,7 +136,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 256
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -123,7 +150,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_0
+      name: FloorWaterRoundCorners0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,20 +162,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -32, y: 2}
-        - {x: -32, y: 32}
-        - {x: -1, y: 32}
-        - {x: -6, y: 10}
+      - - {x: -27, y: -32}
+        - {x: -25, y: -7}
+        - {x: -12, y: 15}
+        - {x: 6, y: 25}
+        - {x: 32, y: 26}
+        - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: 07297f9c7ef87bd47b5cc36c6027d686
-      internalID: -66863190
+      spriteID: dfd22c0a7de10034aaf6ae0eb69502c9
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_1
+      name: FloorWaterRoundCorners1
       rect:
         serializedVersion: 2
         x: 64
@@ -160,70 +189,71 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 7, y: 8}
-        - {x: 2, y: 32}
+      - - {x: -32, y: -32}
+        - {x: -32, y: 26}
+        - {x: 32, y: 26}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58bd716f7824114190d967788a62983
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWaterRoundCorners2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 26}
+        - {x: -1, y: 21}
+        - {x: 18, y: 4}
+        - {x: 26, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63bba61538085846acd8e2bd675c365
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWaterRoundCorners3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -27, y: -32}
+        - {x: -27, y: 32}
         - {x: 32, y: 32}
-        - {x: 32, y: 0}
+        - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: ca3ad67c22a32184cb5d4b931f6e7c99
-      internalID: 2069068675
+      spriteID: cb18c82690ef868418897de57389ecf1
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -32, y: -32}
-        - {x: -32, y: 32}
-        - {x: -1, y: 32}
-        - {x: -1, y: -32}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 910530424feeb46439fe8523b334ff4a
-      internalID: -1175378515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -32, y: -32}
-        - {x: -32, y: 0}
-        - {x: -11, y: -4}
-        - {x: -2, y: -32}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74d46b989608f7546b1e88352ad279e8
-      internalID: -484581394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_4
+      name: FloorWaterRoundCorners4
       rect:
         serializedVersion: 2
         x: 64
@@ -234,21 +264,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 4, y: -32}
-        - {x: 7, y: -8}
-        - {x: 32, y: -1}
-        - {x: 32, y: -32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c03f429bc89ee54db3b645b401291d6
-      internalID: 863064457
+      spriteID: 81cf86ed2387d2e4d93548d71ea682f7
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_5
+      name: FloorWaterRoundCorners5
       rect:
         serializedVersion: 2
         x: 128
@@ -262,20 +288,18 @@ TextureImporter:
       physicsShape:
       - - {x: -32, y: -32}
         - {x: -32, y: 32}
-        - {x: -1, y: 32}
-        - {x: -1, y: -2}
-        - {x: 32, y: -2}
-        - {x: 32, y: -32}
+        - {x: 26, y: 32}
+        - {x: 26, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: f662e791dd1c99541a3b40b3beeb3be4
-      internalID: 429388784
+      spriteID: 96e4ea08562a83e469caefcf928cb711
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_6
+      name: FloorWaterRoundCorners6
       rect:
         serializedVersion: 2
         x: 0
@@ -286,17 +310,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 1, y: -17}
+        - {x: -17, y: 0}
+        - {x: -27, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -27}
       tessellationDetail: 0
       bones: []
-      spriteID: dcc5f4c5057f26048a5aa63db2b9f693
-      internalID: 786210626
+      spriteID: a2159410d0358054fb933fc67cf3ddad
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_7
+      name: FloorWaterRoundCorners7
       rect:
         serializedVersion: 2
         x: 64
@@ -307,17 +336,21 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: -28}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -28}
       tessellationDetail: 0
       bones: []
-      spriteID: f2888c54f450c934a8133f1e0a744bd9
-      internalID: -1260613090
+      spriteID: a26f759bcf5fcdb41820d60f18019dea
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVerticalFlipped_8
+      name: FloorWaterRoundCorners8
       rect:
         serializedVersion: 2
         x: 128
@@ -328,11 +361,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -5, y: -23}
+        - {x: -32, y: -28}
+        - {x: -32, y: 32}
+        - {x: 26, y: 32}
+        - {x: 23, y: 8}
+        - {x: 14, y: -9}
       tessellationDetail: 0
       bones: []
-      spriteID: ee5248ef039775e4eb14eea162959a0a
-      internalID: 496491830
+      spriteID: 84b0285e3c659f04b8ed60c0f0ee841f
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -340,7 +379,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 27ddfabe90e85114485541a17a5685d2
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +387,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FloorBlueGrassToVerticalFlipped_0: -66863190
-      FloorBlueGrassToVerticalFlipped_1: 2069068675
-      FloorBlueGrassToVerticalFlipped_2: -1175378515
-      FloorBlueGrassToVerticalFlipped_3: -484581394
-      FloorBlueGrassToVerticalFlipped_4: 863064457
-      FloorBlueGrassToVerticalFlipped_5: 429388784
-      FloorBlueGrassToVerticalFlipped_6: 786210626
-      FloorBlueGrassToVerticalFlipped_7: -1260613090
-      FloorBlueGrassToVerticalFlipped_8: 496491830
+      FloorWaterRoundCorners0: 21300000
+      FloorWaterRoundCorners1: 21300002
+      FloorWaterRoundCorners2: 21300004
+      FloorWaterRoundCorners3: 21300006
+      FloorWaterRoundCorners4: 21300008
+      FloorWaterRoundCorners5: 21300010
+      FloorWaterRoundCorners6: 21300012
+      FloorWaterRoundCorners7: 21300014
+      FloorWaterRoundCorners8: 21300016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

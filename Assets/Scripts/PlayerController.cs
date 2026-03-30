@@ -13,9 +13,6 @@ public class PlayerController : MonoBehaviour
     {
         //LeftAction.Enable();
         MoveAction.Enable();
-
-        QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 10;
     }
 
     void Update()

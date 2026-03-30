@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 276ace0d64b87dd4bb9822812fc55101
+guid: 812eb024c8d870c4e8e2e84d6a38099f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FloorBlueGrassToVertical_0
+      name: FloorBlueGrassToVerticalFalloff_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,20 +135,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 1, y: -32}
-        - {x: 0, y: 32}
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
         - {x: 32, y: 32}
-        - {x: 32, y: -32}
+        - {x: 32, y: 2}
+        - {x: -2, y: 1.9190063}
+        - {x: -2, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: 704f020ebfb4dfa46b63c36c0b2c2832
-      internalID: 438613166
+      spriteID: f1c90372597b5074cb0b631035da3dd9
+      internalID: -1374680167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVertical_1
+      name: FloorBlueGrassToVerticalFalloff_1
       rect:
         serializedVersion: 2
         x: 64
@@ -160,20 +162,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -32, y: 0}
+      - - {x: -32, y: 2}
         - {x: -32, y: 32}
-        - {x: -2, y: 32}
-        - {x: -10, y: 6}
+        - {x: 32, y: 32}
+        - {x: 32, y: 2}
       tessellationDetail: 0
       bones: []
-      spriteID: 0ffcfc6f07f76d94eaf1eba2d7592fac
-      internalID: -1215192981
+      spriteID: 9623e2e8e7fbfde4988ab11cad1af9c5
+      internalID: -2002310988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVertical_2
+      name: FloorBlueGrassToVerticalFalloff_2
       rect:
         serializedVersion: 2
         x: 128
@@ -185,24 +187,125 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: 12}
-        - {x: 1, y: 32}
+      - - {x: 2, y: 2}
+        - {x: -32, y: 2}
+        - {x: -32, y: 32}
         - {x: 32, y: 32}
-        - {x: 32, y: 1}
+        - {x: 32, y: -32}
+        - {x: 2, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: 173de1fcb4f6c8f42b360a039863d8d0
-      internalID: -1274598571
+      spriteID: e84c7989d6acd424eb47b6e00f3b95c8
+      internalID: 1602919261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVertical_3
+      name: FloorBlueGrassToVerticalFalloff_3
       rect:
         serializedVersion: 2
         x: 0
         y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -2, y: 32}
+        - {x: -2, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e398aeab41a5b8f4eb1bfe97cd16bc62
+      internalID: -92627848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorBlueGrassToVerticalFalloff_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ec5d364d3864745bb8f949f8072137
+      internalID: 221653704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorBlueGrassToVerticalFalloff_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -32}
+        - {x: 2, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70db46c1079d0b64a8a91c16dcd6c257
+      internalID: -1944043220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorBlueGrassToVerticalFalloff_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -2, y: 32}
+        - {x: -2, y: 9}
+        - {x: 8.155827, y: -2}
+        - {x: 32, y: -2}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4e19f1bf0958b4ea154d776f5fec9a
+      internalID: 724347035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorBlueGrassToVerticalFalloff_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
         width: 64
         height: 64
       alignment: 0
@@ -212,24 +315,22 @@ TextureImporter:
       physicsShape:
       - - {x: -32, y: -32}
         - {x: -32, y: -2}
-        - {x: 1, y: -2}
-        - {x: 1, y: 32}
-        - {x: 32, y: 32}
+        - {x: 32, y: -2}
         - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: c14aac71fa9ffb4448e9cd494bfc29ba
-      internalID: -339831373
+      spriteID: abd5fe5c0110b224f9ac838391009195
+      internalID: 77536696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBlueGrassToVertical_4
+      name: FloorBlueGrassToVerticalFalloff_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 128
+        y: 0
         width: 64
         height: 64
       alignment: 0
@@ -238,101 +339,16 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -32, y: -32}
-        - {x: -32, y: -1}
-        - {x: -8, y: -8}
-        - {x: -4, y: -32}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 108cd115f3edc7b40a5ab89d6db1f04b
-      internalID: 2007130740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorBlueGrassToVertical_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 1, y: -32}
-        - {x: 5, y: -9}
-        - {x: 32, y: 0}
+        - {x: -32, y: -2}
+        - {x: -6, y: -2}
+        - {x: 2, y: 6}
+        - {x: 2, y: 32}
+        - {x: 32, y: 32}
         - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe2996431bb960448bab60e2787f047
-      internalID: -1271806782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorBlueGrassToVertical_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 055e790113fbf8149b8df132ea1e4ce6
-      internalID: -966920406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorBlueGrassToVertical_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d3636bf1c01abd45a1fbb400b8955cb
-      internalID: 837162091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorBlueGrassToVertical_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1af34c2810c466c4eb592a6c465c9a2a
-      internalID: -578243714
+      spriteID: 0fb74e32b90354b49b589e6b5d7913f0
+      internalID: -1630302645
       vertices: []
       indices: 
       edges: []
@@ -348,15 +364,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FloorBlueGrassToVertical_0: 438613166
-      FloorBlueGrassToVertical_1: -1215192981
-      FloorBlueGrassToVertical_2: -1274598571
-      FloorBlueGrassToVertical_3: -339831373
-      FloorBlueGrassToVertical_4: 2007130740
-      FloorBlueGrassToVertical_5: -1271806782
-      FloorBlueGrassToVertical_6: -966920406
-      FloorBlueGrassToVertical_7: 837162091
-      FloorBlueGrassToVertical_8: -578243714
+      FloorBlueGrassToVerticalFalloff_0: -1374680167
+      FloorBlueGrassToVerticalFalloff_1: -2002310988
+      FloorBlueGrassToVerticalFalloff_2: 1602919261
+      FloorBlueGrassToVerticalFalloff_3: -92627848
+      FloorBlueGrassToVerticalFalloff_4: 221653704
+      FloorBlueGrassToVerticalFalloff_5: -1944043220
+      FloorBlueGrassToVerticalFalloff_6: 724347035
+      FloorBlueGrassToVerticalFalloff_7: 77536696
+      FloorBlueGrassToVerticalFalloff_8: -1630302645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
