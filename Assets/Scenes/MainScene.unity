@@ -4553,15 +4553,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8416048357996070165, guid: 12ab25d030892df46bc14dce5ab4422d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8982446c8e1373a40871417279ef609e, type: 2}
     - target: {fileID: 4631707711335223791, guid: 12ab25d030892df46bc14dce5ab4422d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.88
       objectReference: {fileID: 0}
     - target: {fileID: 4631707711335223791, guid: 12ab25d030892df46bc14dce5ab4422d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.05
       objectReference: {fileID: 0}
     - target: {fileID: 4631707711335223791, guid: 12ab25d030892df46bc14dce5ab4422d,
         type: 3}
@@ -4607,6 +4612,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716539911397174341, guid: 12ab25d030892df46bc14dce5ab4422d,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716539911397174341, guid: 12ab25d030892df46bc14dce5ab4422d,
+        type: 3}
+      propertyPath: vertical
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

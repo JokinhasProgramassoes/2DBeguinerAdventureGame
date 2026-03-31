@@ -13,12 +13,16 @@ public class EnimigoController : MonoBehaviour
     public float changeTime = 3.0f;
     float timer;
     int direction = 1;
+
+    //Animaçoes:
+    Animator animator;
     Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -33,16 +37,22 @@ public class EnimigoController : MonoBehaviour
 
     void FixedUpdate()
     { 
+        
+
         Vector2 position = rb.position;
         
         if (vertical)
         {
             position.y = position.y + speed * direction * Time.deltaTime;
+            animator.SetFloat("Move X", 0);
+            animator.SetFloat("Move Y", direction);
         }
 
         else
         {
             position.x = position.x + speed * direction * Time.deltaTime;
+            animator.SetFloat("Move X", direction);
+            animator.SetFloat("Move Y",0);
         }
        
         rb.MovePosition(position);
