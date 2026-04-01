@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -8,7 +9,7 @@ using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
 {
-    //public InputAction LeftAction;
+    public GameObject projectilePrefab;
     public InputAction MoveAction;
     Rigidbody2D rb;
     Vector2 move;
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
                 isInvincible = false;
             }
         }
-        
+
         //Mover o personagem
         move = MoveAction.ReadValue<Vector2>();
 
@@ -61,7 +62,11 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Look X", moveDirection.x);
         animator.SetFloat("Look Y", moveDirection.y);
         animator.SetFloat("Speed", move.magnitude);
-        
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Launch();
+        }
     }
 
     void FixedUpdate()
@@ -85,6 +90,13 @@ public class PlayerController : MonoBehaviour
         }
         currentHealth = Math.Clamp(currentHealth + amount, 0, maxHealth);
         UiHandler.instance.SetHealthValue(currentHealth / (float)maxHealth);
+    }
 
+    void Launch()
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.5f, Quaternion.identity);
+        Projetil projectile = projectileObject.GetComponent<Projetil>();
+        projectile.Launch(moveDirection, 300);
+        animator.SetTrigger("Launch");
     }
 }

@@ -18,6 +18,10 @@ public class EnimigoController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
 
+    //damage:
+    bool broken = true;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,8 +40,11 @@ public class EnimigoController : MonoBehaviour
     }
 
     void FixedUpdate()
-    { 
-        
+    {
+        if (!broken)
+        {
+            return;
+        }
 
         Vector2 position = rb.position;
         
@@ -65,5 +72,12 @@ public class EnimigoController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
+    }
+
+    public void Fix()
+    {
+        broken = false;
+        rb.simulated = false;
+        animator.SetTrigger("Fixed");
     }
 }
