@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class EnimigoController : MonoBehaviour
 {
+    public ParticleSystem smokeEfect;
     //Movement
     public bool vertical; 
     public float speed;
@@ -79,5 +80,6 @@ public class EnimigoController : MonoBehaviour
         broken = false;
         rb.simulated = false;
         animator.SetTrigger("Fixed");
+        smokeEfect.Stop();
     }
 }

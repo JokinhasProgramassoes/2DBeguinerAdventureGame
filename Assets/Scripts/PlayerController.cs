@@ -9,6 +9,8 @@ using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
 {
+    AudioSource audioSource;
+
     public InputAction talkAction;
 
     public GameObject projectilePrefab;
@@ -42,6 +44,8 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         talkAction.Enable();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -120,5 +124,10 @@ public class PlayerController : MonoBehaviour
                 UiHandler.instance.DisplayDialogue();
             }
         }
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
