@@ -9,6 +9,8 @@ using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
 {
+    public InputAction talkAction;
+
     public GameObject projectilePrefab;
     public InputAction MoveAction;
     Rigidbody2D rb;
@@ -38,6 +40,8 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
 
         animator = GetComponent<Animator>();
+
+        talkAction.Enable();
     }
 
     void Update()
@@ -66,6 +70,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Launch();
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            FindFriend();
         }
     }
 
@@ -98,5 +107,18 @@ public class PlayerController : MonoBehaviour
         Projetil projectile = projectileObject.GetComponent<Projetil>();
         projectile.Launch(moveDirection, 300);
         animator.SetTrigger("Launch");
+    }
+
+    void FindFriend()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(rb.position + Vector2.up * 0.2f, moveDirection, 1.5f, LayerMask.GetMask("NPC"));
+        if (hit.collider != null)
+        {
+            NPCscript character = hit.collider.GetComponent<NPCscript>();
+            if (character != null)
+            {
+                UiHandler.instance.DisplayDialogue();
+            }
+        }
     }
 }
