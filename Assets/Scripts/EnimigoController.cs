@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 public class EnimigoController : MonoBehaviour
 {
     public ParticleSystem smokeEfect;
+
+    public AudioSource audioSource;
     //Movement
     public bool vertical; 
     public float speed;
@@ -28,6 +30,7 @@ public class EnimigoController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -72,6 +75,7 @@ public class EnimigoController : MonoBehaviour
         if (player != null)
         {
             player.ChangeHealth(-1);
+            audioSource.Stop();
         }
     }
 
